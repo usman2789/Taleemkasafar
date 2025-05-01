@@ -4,6 +4,7 @@ import { Lightbulb, ChevronRight } from "lucide-react"
 import { motion } from "framer-motion"
 import { SectionHeading } from "@/components/landingpage/section-heading"
 import Image from "next/image"
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
 interface StrategyCardProps {
@@ -89,10 +90,12 @@ export function StrategySection() {
           transition={{ duration: 0.5, delay: 0.4 }}
           viewport={{ once: true }}
         >
-          <Button size="lg" className="group">
-            Explore All Strategies
-            <ChevronRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
-          </Button>
+          <Link href="/blogs">
+            <Button size="lg" className="group">
+              Explore All Strategies
+              <ChevronRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
+            </Button>
+          </Link>
         </motion.div>
       </div>
     </section>

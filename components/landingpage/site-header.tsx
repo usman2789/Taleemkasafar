@@ -7,11 +7,12 @@ import { useState, useEffect } from "react"
 import { BookOpen, Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { motion, AnimatePresence } from "framer-motion"
-
+import { useUser } from "@clerk/nextjs"
 
 export function SiteHeader() {
   const [isOpen, setIsOpen] = useState(false)
-    const [mounted, setMounted] = useState(false)
+  const [mounted, setMounted] = useState(false)
+  const { isLoaded, isSignedIn } = useUser()
 
   // Prevent hydration mismatch
   useEffect(() => {
@@ -71,38 +72,21 @@ export function SiteHeader() {
         </nav>
 
         <div className="flex items-center gap-2">
-          {/* Theme Toggle
-          {mounted && (
-            <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.3 }}
-            >
-              <Button 
-                variant="ghost"
-                size="icon"
-                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-                aria-label="Toggle theme"
-                className="relative"
-              >
-                <Sun className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-                <Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-                <span className="sr-only">Toggle theme</span>
-              </Button>
-            </motion.div>
-          )} */}
+          {/* Theme Toggle remains the same */}
 
-          {/* Sign In Button */}
+          {/* Sign In/LMS Button */}
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.3, delay: 0.1 }}
           >
-            <Link href="/lms">
-            <Button variant="outline" size="sm">
-              Sign In
-            </Button>
-            </Link>
+            {isLoaded && (
+              <Link href={isSignedIn ? "/lms" : "/sign-in"}>
+                <Button variant="outline" size="sm">
+                  {isSignedIn ? "LMS" : "Sign In"}
+                </Button>
+              </Link>
+            )}
           </motion.div>
 
           {/* Mobile Menu Toggle */}
@@ -125,7 +109,7 @@ export function SiteHeader() {
             transition={{ duration: 0.3, ease: "easeInOut" }}
             onClick={(e) => e.stopPropagation()}
           >
-            <nav className="container flex flex-col gap-6 p-6">
+            <nav className="container flex flex-col gap-6 p-6 bg-gray-200">
               {menuItems.map((item, index) => (
                 <motion.div
                   key={item.href}

@@ -1,27 +1,20 @@
-header height
+is landing page build on top of ssr,ssg-yes components on csr,while landing page on ssr
 
-mobile device hero section height
+lms-use shad cn-side bar or lms theme
 
-start learning button issue
-
-/sign-in route issue must be in site-header component bcz on going to /lms route it ask for login while not fot on /sign-in
+blogs issue(on landing page(fetch related posts or make it a different component),ui design on other pages)
 
 framer motion use
-
-user signin shows him lms,on lms he chose to start test then first he should be given with instructions
- and button to start test at same route
-so even by case user redirect to /quiz route and sign-in so automatically test not starts
-
-and give user option that can take different test like just math,eng,physics,uet,nust
-so in short first he chooses which one--then instructions page--ten test starts
 
 make sure that mcq store in local storage or use db
 and test stops when user switch the tab,close the browser
 and when next time it opens it start from same place
 
+also make sure that the results shown must include accurate scores in each section,and overall score
+
+
 make sure that the user past result and progress save if use db
 
-also make sure that the results shown must include score in each section,and overall score
 
 user should be able to review his test,he taken to see which one are correct and during this give option to chat with
 trained modal to see why is it wrong and how to think or solve it

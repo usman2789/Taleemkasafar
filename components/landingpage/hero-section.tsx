@@ -20,7 +20,7 @@ export function HeroSection() {
       <div className="absolute inset-0" style={{ backgroundImage: gridPattern, opacity: 0.2 }}></div>
       <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
-      <div className="container px-4 md:px-6 relative z-10">
+      <div className="container px-4 md:px-6 mt-32 md:mt-18 lg:mt-0 relative z-10">
         <motion.div
           className="flex flex-col justify-center items-center text-center space-y-6 max-w-3xl mx-auto"
           initial={{ opacity: 0, y: 20 }}
@@ -33,12 +33,12 @@ export function HeroSection() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.1 }}
             >
-              <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
+              <h1 className="text-3xl font-bold tracking-tighter mb-4 sm:text-5xl xl:text-6xl/none">
                 Your Educational Journey Just Became Easy
               </h1>
             </motion.div>
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 0.2 }}>
-              <p className="text-muted-foreground md:text-xl">
+              <p className="text-muted-foreground mt-4 mb-4 md:text-xl">
                 Pakistan's first free test preparation platform designed to help you excel in your academic journey.
               </p>
             </motion.div>

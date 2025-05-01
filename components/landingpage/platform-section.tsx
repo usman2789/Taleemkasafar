@@ -1,5 +1,6 @@
 "use client"
 import { motion } from "framer-motion"
+import Link from "next/link"
 import { SectionHeading } from "@/components/landingpage/section-heading"
 import { Button } from "@/components/ui/button"
 import { ChevronRight } from "lucide-react"
@@ -105,11 +106,12 @@ export function PlatformSection() {
               transition={{ delay: 0.4 }}
               viewport={{ once: true }}
             >
-              <Button className="group">
-                
-                Start Learning
-                <ChevronRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </Button>
+              <Link href="/lms">
+                <Button className="group">
+                  Start Learning
+                  <ChevronRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </Button>
+              </Link>
             </motion.div>
           </motion.div>
         </div>
