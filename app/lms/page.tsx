@@ -26,7 +26,7 @@ const Page = () => {
           </p>
 
           {/* Start Test Button (Now a Link) */}
-          <Link href="/quiz/start-test">
+          <Link href="/quiz">
             <button className="mt-6 sm:mt-4 px-4 py-2 text-sm sm:text-lg font-semibold text-white bg-purple-600 rounded-lg shadow-md hover:bg-purple-700 transition-all">
               Start Your Test
             </button>
