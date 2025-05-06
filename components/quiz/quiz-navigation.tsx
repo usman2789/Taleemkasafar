@@ -35,28 +35,28 @@ export default function QuizNavigation({
 }: QuizNavigationProps) {
   return (
     <div className="flex space-x-2 flex-wrap gap-2">
-      <Button onClick={onSave} className="bg-gray-300 hover:bg-gray-400 text-black">
+      <Button onClick={onSave} className="border border-gray-600 text-black rounded-md bg-white hover:bg-blue-400 hover:border-black">
         Save
       </Button>
-      <Button onClick={onNext} className="bg-blue-500 hover:bg-blue-600 text-white" disabled={isLastQuestion}>
+      <Button onClick={onNext} className="border border-gray-600 text-black rounded-md bg-white hover:bg-blue-400 hover:border-black" disabled={isLastQuestion}>
         Next
       </Button>
-      <Button onClick={onPrev} className="bg-blue-500 hover:bg-blue-600 text-white" disabled={isFirstQuestion}>
+      <Button onClick={onPrev} className="border border-gray-600 text-black rounded-md bg-white hover:bg-blue-400 hover:border-black" disabled={isFirstQuestion}>
         Prev
       </Button>
-      <Button onClick={onToggleReview} className="bg-gray-300 hover:bg-gray-400 text-black">
+      <div className="hidden md:block"><Button onClick={onToggleReview} className="border border-gray-600 text-black rounded-md bg-white hover:bg-blue-400 hover:border-black">
         {isMarkedForReview ? "Remove Review" : "Mark for Review"}
-      </Button>
-      <Button onClick={onNextSection} className="bg-blue-500 hover:bg-blue-600 text-white" disabled={isLastSection}>
+      </Button></div>
+      <Button onClick={onNextSection} className="border border-gray-600 text-black rounded-md bg-white hover:bg-blue-400 hover:border-black" disabled={isLastSection}>
         Next Section
       </Button>
-      <Button onClick={onPrevSection} className="bg-blue-500 hover:bg-blue-600 text-white" disabled={isFirstSection}>
+      <Button onClick={onPrevSection} className="border border-gray-600 text-black rounded-md bg-white hover:bg-blue-400 hover:border-black" disabled={isFirstSection}>
         Prev Section
       </Button>
-      <Button onClick={onFirst} className="bg-blue-500 hover:bg-blue-600 text-white">
+      <Button onClick={onFirst} className="border border-gray-600 text-black rounded-md bg-white hover:bg-blue-400 hover:border-black">
         First
       </Button>
-      <Button onClick={onLast} className="bg-blue-500 hover:bg-blue-600 text-white">
+      <Button onClick={onLast} className="border border-gray-600 text-black rounded-md bg-white hover:bg-blue-400 hover:border-black">
         Last
       </Button>
     </div>

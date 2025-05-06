@@ -21,7 +21,7 @@ export default function QuestionGrid({
 }: QuestionGridProps) {
   return (
     <div className="flex-1 mx-4 overflow-y-auto max-h-32 border border-gray-300 p-2 bg-white rounded">
-      <div className="grid grid-cols-10 gap-1">
+      <div className="grid grid-cols-10 gap-4">
         {questions.map((index) => (
           <Button
             key={index}
@@ -34,7 +34,7 @@ export default function QuestionGrid({
                   : selectedAnswers[index] !== undefined
                     ? "bg-yellow-100 border border-yellow-500 text-black"
                     : "bg-gray-100 border border-gray-300 text-black"
-            } ${reviewQuestions.includes(index) ? "ring-2 ring-yellow-500" : ""}`}
+            } ${reviewQuestions.includes(index) ? "ring-2 ring-red-500 text-red-700" : ""}`}
           >
             {index + 1}
           </Button>

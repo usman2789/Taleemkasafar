@@ -1,34 +1,26 @@
-"use client"
-
 import type React from "react"
-
 import { BookOpen, BarChart2, Clock, LineChart } from "lucide-react"
-import { motion } from "framer-motion"
 import { SectionHeading } from "@/components/landingpage/section-heading"
 
 interface FeatureCardProps {
   icon: React.ComponentType<any>
   title: string
   description: string
-  delay: number
+  index: number
 }
 
-function FeatureCard({ icon: Icon, title, description, delay }: FeatureCardProps) {
+function FeatureCard({ icon: Icon, title, description, index }: FeatureCardProps) {
   return (
-    <motion.div
-      className="flex flex-col items-center space-y-2 rounded-lg border p-6 shadow-sm transition-all hover:shadow-md"
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay }}
-      viewport={{ once: true }}
-      whileHover={{ y: -5 }}
+    <div 
+      className="flex flex-col items-center space-y-2 rounded-lg border p-6 shadow-sm transition-all hover:shadow-md hover:-translate-y-1 duration-300 opacity-0 animate-fade-in"
+      style={{ animationDelay: `${0.1 * (index + 1)}s` }}
     >
       <div className="rounded-full bg-primary/10 p-3">
         <Icon className="h-6 w-6 text-primary" />
       </div>
       <h3 className="text-xl font-bold">{title}</h3>
       <p className="text-sm text-muted-foreground text-center">{description}</p>
-    </motion.div>
+    </div>
   )
 }
 
@@ -70,7 +62,7 @@ export function FeatureSection() {
               icon={feature.icon}
               title={feature.title}
               description={feature.description}
-              delay={0.1 * (index + 1)}
+              index={index}
             />
           ))}
         </div>

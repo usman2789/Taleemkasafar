@@ -100,6 +100,7 @@ useEffect(() => {
         />
 
         <div className="flex justify-between items-center mb-4">
+        <div className='hidden md:block'>
           <div className="flex items-center space-x-2">
             <div className="bg-green-500 text-white p-2 w-18 text-center">
               <div className="text-2xl">{Math.floor(timeRemaining / 60)}</div>
@@ -110,7 +111,7 @@ useEffect(() => {
               <FlipClock seconds={timeRemaining} />
             </div>
           </div>
-
+          </div>
           <QuizNavigation
             onNext={navigateToNext}
             onPrev={navigateToPrevious}
@@ -128,18 +129,23 @@ useEffect(() => {
           />
         </div>
 
-        <div className="flex justify-between items-center mb-4">
+        <div className=" flex justify-between items-center mb-4">
+        <div className='hidden md:block'>
           <QuestionFilter filterOptions={filterOptions} currentFilter={filterType} onFilterChange={setFilterType} />
+          </div>
+         
+          <div className="hidden md:block">
+    <QuestionGrid 
+      questions={filteredQuestions}
+      currentIndex={currentQuestionIndex}
+      savedAnswers={savedAnswers}
+      selectedAnswers={selectedAnswers}
+      reviewQuestions={reviewQuestions}
+      onNavigate={navigateToQuestion}
+    />
+  </div>
 
-          <QuestionGrid
-            questions={filteredQuestions}
-            currentIndex={currentQuestionIndex}
-            savedAnswers={savedAnswers}
-            selectedAnswers={selectedAnswers}
-            reviewQuestions={reviewQuestions}
-            onNavigate={navigateToQuestion}
-          />
-
+  
           <Button
             onClick={() => {
               if (window.confirm("Are you sure you want to finish the test? This action cannot be undone.")) {

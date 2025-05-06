@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "If f(x) = 2x² + 3x - 5, what is f(2)?",
     "options": ["7", "9", "11", "13"],
@@ -9,7 +9,7 @@
   },
   {
     "id": 2,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "Solve for x: 3x - 7 = 14",
     "options": ["x = 5", "x = 7", "x = 9", "x = 11"],
@@ -17,7 +17,7 @@
   },
   {
     "id": 3,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "What is the derivative of f(x) = x³ - 4x² + 2x - 7?",
     "options": ["f'(x) = 3x² - 8x + 2", "f'(x) = 3x² - 4x + 2", "f'(x) = 3x² - 8x - 2", "f'(x) = 3x² - 4x - 2"],
@@ -25,7 +25,7 @@
   },
   {
     "id": 4,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "What is the value of sin(π/4)?",
     "options": ["1/2", "√2/2", "√3/2", "1"],
@@ -33,7 +33,7 @@
   },
   {
     "id": 5,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "If A = {1, 2, 3, 4} and B = {3, 4, 5, 6}, what is A ∩ B?",
     "options": ["{1, 2, 3, 4, 5, 6}", "{3, 4}", "{1, 2, 5, 6}", "{}"],
@@ -41,7 +41,7 @@
   },
   {
     "id": 6,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "What is the limit of (sin x)/x as x approaches 0?",
     "options": ["0", "1", "∞", "Does not exist"],
@@ -49,7 +49,7 @@
   },
   {
     "id": 7,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "Solve the equation: log₂(x) + log₂((x-3)) = 3",
     "options": ["x = 4", "x = 5", "x = 6", "x = 7"],
@@ -57,7 +57,7 @@
   },
   {
     "id": 8,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "What is the area of a circle with radius 5 units?",
     "options": ["25π square units", "10π square units", "5π square units", "2.5π square units"],
@@ -65,7 +65,7 @@
   },
   {
     "id": 9,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "If P(A) = 0.4 and P(B) = 0.3 and A and B are independent events, what is P(A ∩ B)?",
     "options": ["0.12", "0.7", "0.1", "0.42"],
@@ -73,7 +73,7 @@
   },
   {
     "id": 10,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "What is the sum of the first 20 terms of an arithmetic sequence with a₁ = 3 and d = 4?",
     "options": ["820", "830", "840", "850"],
@@ -81,7 +81,7 @@
   },
   {
     "id": 11,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "Evaluate the integral ∫(2x + 3) dx from x = 0 to x = 4",
     "options": ["20", "22", "24", "26"],
@@ -89,7 +89,7 @@
   },
   {
     "id": 12,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "Find the value of x if log₁₀(x) = 2",
     "options": ["20", "100", "200", "1000"],
@@ -97,7 +97,7 @@
   },
   {
     "id": 13,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "What is the slope of the line passing through points (2, 3) and (5, 9)?",
     "options": ["1", "2", "3", "4"],
@@ -105,7 +105,7 @@
   },
   {
     "id": 14,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "If sin(θ) = 0.6, what is cos(θ)?",
     "options": ["0.6", "0.8", "0.36", "0.64"],
@@ -113,7 +113,7 @@
   },
   {
     "id": 15,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "What is the value of 5! (5 factorial)?",
     "options": ["24", "60", "120", "720"],
@@ -121,7 +121,7 @@
   },
   {
     "id": 16,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "Solve the system of equations: 2x + y = 7 and x - y = 1",
     "options": ["x = 2, y = 3", "x = 3, y = 1", "x = 4, y = -1", "x = 5, y = -3"],
@@ -129,7 +129,7 @@
   },
   {
     "id": 17,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "What is the domain of the function f(x) = 1/(x-2)?",
     "options": ["All real numbers", "All real numbers except 2", "All real numbers except 0", "All positive numbers"],
@@ -137,7 +137,7 @@
   },
   {
     "id": 18,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "What is the value of cos(0°)?",
     "options": ["0", "1", "-1", "1/2"],
@@ -145,7 +145,7 @@
   },
   {
     "id": 19,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "If f(x) = x² and g(x) = 2x + 1, what is (f ∘ g)(2)?",
     "options": ["25", "36", "49", "64"],
@@ -153,7 +153,7 @@
   },
   {
     "id": 20,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "What is the solution to the quadratic equation x² - 5x + 6 = 0?",
     "options": ["x = 2, x = 3", "x = 1, x = 6", "x = -2, x = -3", "x = -1, x = -6"],
@@ -161,7 +161,7 @@
   },
   {
     "id": 21,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "What is the value of tan(45°)?",
     "options": ["0", "1", "√3", "Undefined"],
@@ -169,7 +169,7 @@
   },
   {
     "id": 22,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "Find the derivative of f(x) = e^x",
     "options": ["e^x", "xe^(x-1)", "e^(x+1)", "0"],
@@ -177,7 +177,7 @@
   },
   {
     "id": 23,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "What is the value of log₁₀(1000)?",
     "options": ["1", "2", "3", "10"],
@@ -185,7 +185,7 @@
   },
   {
     "id": 24,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "If A and B are two events such that P(A) = 0.5, P(B) = 0.3, and P(A ∩ B) = 0.2, what is P(A ∪ B)?",
     "options": ["0.6", "0.7", "0.8", "0.9"],
@@ -193,7 +193,7 @@
   },
   {
     "id": 25,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "What is the sum of the interior angles of a pentagon?",
     "options": ["360°", "450°", "540°", "720°"],
@@ -201,7 +201,7 @@
   },
   {
     "id": 26,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "What is the value of sin(90°)?",
     "options": ["0", "1", "-1", "√2/2"],
@@ -209,7 +209,7 @@
   },
   {
     "id": 27,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "Find the limit of (x² - 1)/(x - 1) as x approaches 1",
     "options": ["0", "1", "2", "Undefined"],
@@ -217,7 +217,7 @@
   },
   {
     "id": 28,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "What is the value of ∑(i=1 to 5) i²?",
     "options": ["30", "55", "65", "75"],
@@ -225,7 +225,7 @@
   },
   {
     "id": 29,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "If f(x) = |x|, what is f'(0)?",
     "options": ["0", "1", "-1", "Does not exist"],
@@ -233,7 +233,7 @@
   },
   {
     "id": 30,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "What is the value of cos(180°)?",
     "options": ["0", "1", "-1", "√3/2"],
@@ -241,7 +241,7 @@
   },
   {
     "id": 31,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "Find the value of log₂(32)",
     "options": ["3", "4", "5", "6"],
@@ -249,7 +249,7 @@
   },
   {
     "id": 32,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "What is the area of a triangle with base 6 units and height 8 units?",
     "options": ["24 square units", "48 square units", "12 square units", "16 square units"],
@@ -257,7 +257,7 @@
   },
   {
     "id": 33,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "If f(x) = 3x + 2 and g(x) = x² - 1, what is (g ∘ f)(1)?",
     "options": ["16", "20", "24", "28"],
@@ -265,7 +265,7 @@
   },
   {
     "id": 34,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "What is the value of sin(30°)?",
     "options": ["1/4", "1/3", "1/2", "2/3"],
@@ -273,7 +273,7 @@
   },
   {
     "id": 35,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "Find the derivative of f(x) = ln(x)",
     "options": ["1/x", "x", "ln(x)/x", "e^x"],
@@ -281,7 +281,7 @@
   },
   {
     "id": 36,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "What is the value of cos(60°)?",
     "options": ["1/4", "1/3", "1/2", "2/3"],
@@ -289,7 +289,7 @@
   },
   {
     "id": 37,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "If P(A) = 0.6 and P(B|A) = 0.4, what is P(A ∩ B)?",
     "options": ["0.12", "0.24", "0.36", "0.48"],
@@ -297,7 +297,7 @@
   },
   {
     "id": 38,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "What is the value of tan(60°)?",
     "options": ["√3/3", "√3/2", "√3", "2√3"],
@@ -305,7 +305,7 @@
   },
   {
     "id": 39,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "Find the integral of x·sin(x) dx",
     "options": ["sin(x) - x·cos(x)", "x·sin(x) + cos(x)", "sin(x) + x·cos(x)", "-sin(x) + x·cos(x)"],
@@ -313,7 +313,7 @@
   },
   {
     "id": 40,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "What is the value of 7C3 (7 choose 3)?",
     "options": ["21", "35", "42", "56"],
@@ -321,7 +321,7 @@
   },
   {
     "id": 41,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "Find the value of sin²(30°) + cos²(30°)",
     "options": ["0", "1/2", "1", "2"],
@@ -329,7 +329,7 @@
   },
   {
     "id": 42,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "What is the solution to the equation e^x = 10?",
     "options": ["x = ln(10)", "x = log₁₀(e)", "x = 10", "x = e^10"],
@@ -337,7 +337,7 @@
   },
   {
     "id": 43,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "If f(x) = x³ - 3x² + 2x - 1, what is f'(2)?",
     "options": ["3", "5", "7", "9"],
@@ -345,7 +345,7 @@
   },
   {
     "id": 44,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "What is the value of cos(π/3)?",
     "options": ["1/4", "1/3", "1/2", "2/3"],
@@ -353,7 +353,7 @@
   },
   {
     "id": 45,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "Find the limit of (1 + 1/n)^n as n approaches infinity",
     "options": ["1", "2", "e", "π"],
@@ -361,7 +361,7 @@
   },
   {
     "id": 46,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "What is the value of sin(π/6)?",
     "options": ["1/4", "1/3", "1/2", "2/3"],
@@ -369,7 +369,7 @@
   },
   {
     "id": 47,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "If f(x) = x² + 2x + 1, what is the minimum value of f(x)?",
     "options": ["0", "1", "2", "3"],
@@ -377,7 +377,7 @@
   },
   {
     "id": 48,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "What is the value of tan(π/4)?",
     "options": ["0", "1", "√3", "Undefined"],
@@ -385,7 +385,7 @@
   },
   {
     "id": 49,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "Find the derivative of f(x) = sin(x)",
     "options": ["cos(x)", "-cos(x)", "sin(x)", "-sin(x)"],
@@ -393,7 +393,7 @@
   },
   {
     "id": 50,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "What is the value of log₁₀(0.01)?",
     "options": ["-3", "-2", "-1", "0.01"],
@@ -401,7 +401,7 @@
   },
   {
     "id": 51,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "Find the value of cos(π/4)",
     "options": ["1/2", "√2/2", "√3/2", "1"],
@@ -409,7 +409,7 @@
   },
   {
     "id": 52,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "What is the derivative of f(x) = cos(x)?",
     "options": ["sin(x)", "-sin(x)", "cos(x)", "-cos(x)"],
@@ -417,7 +417,7 @@
   },
   {
     "id": 53,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "If f(x) = x² - 4x + 4, what are the zeros of f(x)?",
     "options": ["x = 0, x = 4", "x = -2, x = 2", "x = 2 (double root)", "x = -2 (double root)"],
@@ -425,7 +425,7 @@
   },
   {
     "id": 54,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "What is the value of sin(π/2)?",
     "options": ["0", "1/2", "1", "√2"],
@@ -433,7 +433,7 @@
   },
   {
     "id": 55,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "Find the integral of e^x dx",
     "options": ["e^x", "e^x + C", "ln(x) + C", "x·e^x + C"],
@@ -441,7 +441,7 @@
   },
   {
     "id": 56,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "What is the value of cos(π)?",
     "options": ["0", "1", "-1", "Undefined"],
@@ -449,7 +449,7 @@
   },
   {
     "id": 57,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "If f(x) = 2^x, what is f'(x)?",
     "options": ["2^x", "2^x · ln(2)", "x · 2^(x-1)", "2 · 2^(x-1)"],
@@ -457,7 +457,7 @@
   },
   {
     "id": 58,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "What is the value of sin(π)?",
     "options": ["0", "1", "-1", "Undefined"],
@@ -465,7 +465,7 @@
   },
   {
     "id": 59,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "Find the limit of sin(x)/x as x approaches 0",
     "options": ["0", "1", "∞", "Does not exist"],
@@ -473,7 +473,7 @@
   },
   {
     "id": 60,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "What is the value of tan(0)?",
     "options": ["0", "1", "-1", "Undefined"],
@@ -481,7 +481,7 @@
   },
   {
     "id": 61,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "Find the derivative of f(x) = tan(x)",
     "options": ["sec(x)", "sec²(x)", "cot(x)", "csc²(x)"],
@@ -489,7 +489,7 @@
   },
   {
     "id": 62,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "What is the value of cos(π/2)?",
     "options": ["0", "1/2", "1", "-1"],
@@ -497,7 +497,7 @@
   },
   {
     "id": 63,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "If f(x) = ln(x), what is f'(x)?",
     "options": ["1/x", "ln(x)/x", "x·ln(x)", "e^x"],
@@ -505,7 +505,7 @@
   },
   {
     "id": 64,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "What is the value of sin(-π/2)?",
     "options": ["0", "1", "-1", "Undefined"],
@@ -513,7 +513,7 @@
   },
   {
     "id": 65,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "Find the integral of 1/x dx",
     "options": ["x", "1/x + C", "ln|x| + C", "e^x + C"],
@@ -521,7 +521,7 @@
   },
   {
     "id": 66,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "What is the value of cos(-π)?",
     "options": ["0", "1", "-1", "Undefined"],
@@ -529,7 +529,7 @@
   },
   {
     "id": 67,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "If f(x) = x^n, what is f'(x)?",
     "options": ["n·x^(n-1)", "n·x^n", "x^(n+1)", "n·x^(n+1)"],
@@ -537,7 +537,7 @@
   },
   {
     "id": 68,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "What is the value of sin(3π/2)?",
     "options": ["0", "1", "-1", "Undefined"],
@@ -545,7 +545,7 @@
   },
   {
     "id": 69,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "Find the limit of (1 - cos(x))/x² as x approaches 0",
     "options": ["0", "1/2", "1", "∞"],
@@ -553,7 +553,7 @@
   },
   {
     "id": 70,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "What is the value of tan(π)?",
     "options": ["0", "1", "-1", "Undefined"],
@@ -561,7 +561,7 @@
   },
   {
     "id": 71,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "Find the derivative of f(x) = sec(x)",
     "options": ["sec(x)·tan(x)", "-sec(x)·tan(x)", "csc(x)·cot(x)", "-csc(x)·cot(x)"],
@@ -569,7 +569,7 @@
   },
   {
     "id": 72,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "What is the value of cos(2π)?",
     "options": ["0", "1", "-1", "Undefined"],
@@ -577,7 +577,7 @@
   },
   {
     "id": 73,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "If f(x) = a^x, what is f'(x)?",
     "options": ["a^x", "a^x · ln(a)", "x · a^(x-1)", "a · a^(x-1)"],
@@ -585,7 +585,7 @@
   },
   {
     "id": 74,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "What is the value of sin(2π)?",
     "options": ["0", "1", "-1", "Undefined"],
@@ -593,7 +593,7 @@
   },
   {
     "id": 75,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "Find the integral of sin(x) dx",
     "options": ["cos(x) + C", "-cos(x) + C", "sin(x) + C", "-sin(x) + C"],
@@ -601,7 +601,7 @@
   },
   {
     "id": 76,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "What is the value of tan(π/2)?",
     "options": ["0", "1", "-1", "Undefined"],
@@ -609,7 +609,7 @@
   },
   {
     "id": 77,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "If f(x) = sin(x) and g(x) = cos(x), what is (f · g)(x)?",
     "options": ["sin(x)·cos(x)", "sin(x) + cos(x)", "sin(cos(x))", "cos(sin(x))"],
@@ -617,7 +617,7 @@
   },
   {
     "id": 78,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "What is the value of cos(3π/2)?",
     "options": ["0", "1", "-1", "Undefined"],
@@ -625,7 +625,7 @@
   },
   {
     "id": 79,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "Find the derivative of f(x) = csc(x)",
     "options": ["sec(x)·tan(x)", "-sec(x)·tan(x)", "-csc(x)·cot(x)", "csc(x)·cot(x)"],
@@ -633,7 +633,7 @@
   },
   {
     "id": 80,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "What is the value of sin(0)?",
     "options": ["0", "1", "-1", "Undefined"],
@@ -641,7 +641,7 @@
   },
   {
     "id": 81,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "Find the integral of cos(x) dx",
     "options": ["sin(x) + C", "-sin(x) + C", "cos(x) + C", "-cos(x) + C"],
@@ -649,7 +649,7 @@
   },
   {
     "id": 82,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "What is the value of tan(π/3)?",
     "options": ["1/√3", "√3/3", "√3", "3√3"],
@@ -657,7 +657,7 @@
   },
   {
     "id": 83,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "If f(x) = x·sin(x), what is f'(x)?",
     "options": ["sin(x) + x·cos(x)", "cos(x) + x·sin(x)", "sin(x) - x·cos(x)", "cos(x) - x·sin(x)"],
@@ -665,7 +665,7 @@
   },
   {
     "id": 84,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "What is the value of cos(π/6)?",
     "options": ["1/2", "√2/2", "√3/2", "1"],
@@ -673,7 +673,7 @@
   },
   {
     "id": 85,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "Find the limit of (e^x - 1)/x as x approaches 0",
     "options": ["0", "1", "e", "∞"],
@@ -681,7 +681,7 @@
   },
   {
     "id": 86,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "What is the value of sin(π/3)?",
     "options": ["1/2", "√2/2", "√3/2", "1"],
@@ -689,7 +689,7 @@
   },
   {
     "id": 87,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "If f(x) = x·e^x, what is f'(x)?",
     "options": ["e^x", "x·e^x", "e^x + x·e^x", "e^x - x·e^x"],
@@ -697,7 +697,7 @@
   },
   {
     "id": 88,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "What is the value of tan(π/6)?",
     "options": ["1/√3", "√3/3", "√3", "3√3"],
@@ -705,7 +705,7 @@
   },
   {
     "id": 89,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "Find the integral of tan(x) dx",
     "options": ["ln|sec(x)| + C", "ln|cos(x)| + C", "-ln|cos(x)| + C", "-ln|sec(x)| + C"],
@@ -713,7 +713,7 @@
   },
   {
     "id": 90,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "What is the value of sin(5π/6)?",
     "options": ["1/2", "√2/2", "√3/2", "1"],
@@ -721,7 +721,7 @@
   },
   {
     "id": 91,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "If f(x) = ln(x²), what is f'(x)?",
     "options": ["2/x", "2x/x²", "2/x²", "2x"],
@@ -729,7 +729,7 @@
   },
   {
     "id": 92,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "What is the value of cos(5π/6)?",
     "options": ["-√3/2", "-1/2", "1/2", "√3/2"],
@@ -737,7 +737,7 @@
   },
   {
     "id": 93,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "Find the derivative of f(x) = cot(x)",
     "options": ["csc²(x)", "-csc²(x)", "sec²(x)", "-sec²(x)"],
@@ -745,7 +745,7 @@
   },
   {
     "id": 94,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "What is the value of sin(7π/6)?",
     "options": ["-1/2", "-√2/2", "-√3/2", "-1"],
@@ -753,7 +753,7 @@
   },
   {
     "id": 95,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "Find the integral of sec²(x) dx",
     "options": ["tan(x) + C", "-tan(x) + C", "sec(x) + C", "-sec(x) + C"],
@@ -761,7 +761,7 @@
   },
   {
     "id": 96,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "What is the value of cos(7π/6)?",
     "options": ["-√3/2", "-1/2", "1/2", "√3/2"],
@@ -769,7 +769,7 @@
   },
   {
     "id": 97,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "If f(x) = x·ln(x), what is f'(x)?",
     "options": ["ln(x)", "1 + ln(x)", "x/ln(x)", "ln(x)/x"],
@@ -777,7 +777,7 @@
   },
   {
     "id": 98,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "What is the value of tan(2π/3)?",
     "options": ["-√3", "-1", "1", "√3"],
@@ -785,7 +785,7 @@
   },
   {
     "id": 99,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "Find the integral of sec(x)·tan(x) dx",
     "options": ["sec(x) + C", "-sec(x) + C", "tan(x) + C", "-tan(x) + C"],
@@ -793,7 +793,7 @@
   },
   {
     "id": 100,
-    "subject": "Mathematics",
+    "subject": "Math",
     "section": 1,
     "question": "What is the value of sin(11π/6)?",
     "options": ["-1/2", "1/2", "-√3/2", "√3/2"],

@@ -51,7 +51,7 @@ export default function QuizPage() {
 
             <button
               onClick={handleStart}
-              className="w-full bg-blue-600 text-white py-3 px-6 rounded-md hover:bg-blue-700 transition-colors"
+              className="w-full bg-purple-600 text-white py-3 px-6 rounded-md hover:bg-blue-700 transition-colors"
             >
               Start Test
             </button>

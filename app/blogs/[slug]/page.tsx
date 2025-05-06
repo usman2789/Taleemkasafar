@@ -1,121 +1,189 @@
-import { getBlogBySlug, getRelatedBlogs, getAllBlogs } from '@/data/data';
-import Image from 'next/image';
-import { notFound } from 'next/navigation';
-import Link from 'next/link';
-import { ArrowLeft } from 'lucide-react';
-// import Header from '@/components/header';
-// import Footer from '@/components/footer';
-import { Metadata } from 'next';
+import Link from "next/link"
+import { notFound } from "next/navigation"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import {SiteHeader} from "@/components/landingpage/site-header"
+import {SiteFooter} from "@/components/landingpage/site-footer"
+import { getBlogPosts, getBlogBySlug } from "@/lib/blog-utils"
+import { CalendarIcon, User2Icon, Clock3Icon } from "lucide-react"
 
-// Define the props interface
-interface PageProps {
-  params: {
-    slug: string;
-  };
-  searchParams: { [key: string]: string | string[] | undefined };
-}
-
-// Pre-render all possible slugs at build time
 export async function generateStaticParams() {
-  const blogs = await getAllBlogs(); // Fetch all blogs to extract slugs
-  return blogs.map((blog) => ({
-    slug: blog.slug,
-  }));
+  const posts = getBlogPosts()
+
+  return posts.map((post) => ({
+    slug: post.slug,
+  }))
 }
 
-// Page component for individual blog posts
-export default async function BlogPost({ params, searchParams }: PageProps) {
-  // Fetch the blog post data based on the slug
-  const blog = await getBlogBySlug(params.slug);
+export default async function BlogPost({ params }: { params: { slug: string } }) {
+  const { slug } = await Promise.resolve(params);
+  const post = getBlogBySlug(slug)
 
-  if (!blog) {
-    notFound(); // Redirect to 404 page if the blog post is not found
+  if (!post) {
+    notFound()
   }
 
-  // Fetch related blogs
-  const relatedBlogs = await getRelatedBlogs(blog.id, blog.category);
+  const relatedPosts = getBlogPosts()
+    .filter((p) => p.slug !== slug)
+    .slice(0, 3)
 
   return (
-    <div className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
-      {/* Render the header component */}
-      {/* <Header /> */}
-
-      <div className="container mx-auto max-w-6xl">
-        {/* Back to Blog List Link */}
-        <Link href="/blog" className="flex items-center text-center text-white mb-4 pt-28 hover:underline">
-          <ArrowLeft className="w-4 h-4 mr-2" />
-          Back to Strategies
-        </Link>
-
-        {/* Main Blog Content */}
-        <article className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-xl shadow-sm overflow-hidden mb-12">
-          <div className="relative h-96">
-            <Image
-              src={blog.coverImage}
-              alt={blog.title}
-              fill
-              priority
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            />
-          </div>
-
-          <div className="p-8">
-            <span className="text-xs text-blue-600 font-medium uppercase tracking-wide">{blog.category}</span>
-            <h1 className="text-4xl font-bold my-4">{blog.title}</h1>
-
-            <div className="flex items-center justify-between mb-8 pb-4 border-b border-gray-100">
-              <div className="flex items-center">
-                <span className="text-white">{blog.author}</span>
+    <div className="flex min-h-screen flex-col">
+      <SiteHeader />
+      <main className="flex-1">
+        {/* Blog Header */}
+        <section className="bg-gradient-to-r from-emerald-600 to-teal-500 py-16 text-white">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="max-w-3xl mx-auto text-center">
+              <div className="flex items-center justify-center gap-2 mb-4">
+                <span className="text-sm bg-white/20 px-3 py-1 rounded-full">{post.category}</span>
               </div>
-              <span className="text-white">{blog.readTime} min read</span>
-            </div>
-
-            <div className="prose prose-lg max-w-none">
-              {blog.content.map((paragraph, index) => (
-                <p key={index} className="mb-6">
-                  {paragraph}
-                </p>
-              ))}
+              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">{post.title}</h1>
+              <div className="flex items-center justify-center gap-4 text-sm">
+                <div className="flex items-center gap-1">
+                  <User2Icon className="h-4 w-4" />
+                  <span>{post.author}</span>
+                </div>
+                <div className="flex items-center gap-1">
+                  <CalendarIcon className="h-4 w-4" />
+                  <span>{new Date(post.date).toLocaleDateString()}</span>
+                </div>
+                <div className="flex items-center gap-1">
+                  <Clock3Icon className="h-4 w-4" />
+                  <span>{post.readingTime} min read</span>
+                </div>
+              </div>
             </div>
           </div>
-        </article>
+        </section>
 
-        {/* Related Posts Section */}
-        <div className="mt-16">
-          <h2 className="text-2xl font-bold mb-8">You might also like</h2>
+        {/* Blog Content */}
+        <section className="py-16">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="grid gap-12 lg:grid-cols-[1fr_300px]">
+              <div>
+                <div className="aspect-video relative mb-8 overflow-hidden rounded-lg">
+                  <img
+                    src={post.coverImage || "/placeholder.svg"}
+                    alt={post.title}
+                    className="object-cover w-full h-full"
+                  />
+                </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-5 px-3">
-            {relatedBlogs.map((relatedBlog) => (
-              <Link key={relatedBlog.id} href={`/blog/${relatedBlog.slug}`} className="group">
-                <div className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 h-full transform hover:-translate-y-1">
-                  <div className="relative h-40 overflow-hidden">
-                    <Image
-                      src={relatedBlog.coverImage}
-                      alt={relatedBlog.title}
-                      fill
-                      sizes="(max-width: 640px) 100vw, (max-width: 768px) 33vw, 25vw"
-                      className="object-cover transition-transform duration-300 group-hover:scale-105"
-                    />
-                  </div>
-                  <div className="p-4">
-                    <span className="text-xs text-blue-600 font-medium uppercase tracking-wide">{relatedBlog.category}</span>
-                    <h3 className="text-md font-semibold text-gray-800 mb-2 mt-1 line-clamp-2 group-hover:text-blue-600 transition-colors duration-300">
-                      {relatedBlog.title}
-                    </h3>
-                    <div className="flex items-center justify-between mt-2 pt-2 border-t border-gray-100">
-                      <span className="text-xs text-gray-500">{relatedBlog.readTime} min read</span>
+                <div className="prose prose-emerald max-w-none">
+                  {post.content.split("\n\n").map((paragraph, idx) => (
+                    <p key={idx}>{paragraph}</p>
+                  ))}
+                </div>
+
+                <div className="mt-8 pt-8 border-t">
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <h3 className="text-lg font-semibold">Share this article</h3>
+                      <div className="flex gap-2 mt-2">
+                        <Button size="sm" variant="outline">
+                          Twitter
+                        </Button>
+                        <Button size="sm" variant="outline">
+                          Facebook
+                        </Button>
+                        <Button size="sm" variant="outline">
+                          LinkedIn
+                        </Button>
+                      </div>
+                    </div>
+                    <div>
+                      <Link href="/blogs">
+                        <Button variant="outline">Back to Blogs</Button>
+                      </Link>
                     </div>
                   </div>
                 </div>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </div>
+              </div>
 
-      {/* Render the site footer */}
-      {/* <Footer /> */}
+              <div className="space-y-8">
+                <div>
+                  <h3 className="text-lg font-semibold mb-4">Latest Articles</h3>
+                  <div className="space-y-4">
+                    {relatedPosts.map((related) => (
+                      <Card key={related.slug}>
+                        <CardHeader className="p-4">
+                          <CardTitle className="text-base">{related.title}</CardTitle>
+                        </CardHeader>
+                        <CardContent className="p-4 pt-0">
+                          <p className="text-sm text-gray-500 line-clamp-2">{related.excerpt}</p>
+                        </CardContent>
+                        <CardFooter className="p-4 pt-0">
+                          <Link href={`/blogs/${related.slug}`}>
+                            <Button variant="link" className="p-0">
+                              Read More
+                            </Button>
+                          </Link>
+                        </CardFooter>
+                      </Card>
+                    ))}
+                  </div>
+                </div>
+
+                {/* <div>
+                  <h3 className="text-lg font-semibold mb-4">Categories</h3>
+                  <div className="flex flex-wrap gap-2">
+                    <Button variant="outline" size="sm">
+                      Study Tips
+                    </Button>
+                    <Button variant="outline" size="sm">
+                      Test Strategies
+                    </Button>
+                    <Button variant="outline" size="sm">
+                      Time Management
+                    </Button>
+                    <Button variant="outline" size="sm">
+                      Subject Guides
+                    </Button>
+                    <Button variant="outline" size="sm">
+                      Success Stories
+                    </Button>
+                  </div>
+                </div> */}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* More Articles */}
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4 md:px-6">
+            <h2 className="text-2xl font-bold tracking-tight sm:text-3xl mb-8 text-center">
+              More Articles You Might Like
+            </h2>
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              {relatedPosts.map((blog) => (
+                <Card key={blog.slug} className="overflow-hidden">
+                  <div className="aspect-video relative">
+                    <img
+                      src={blog.coverImage || "/placeholder.svg"}
+                      alt={blog.title}
+                      className="object-cover w-full h-full"
+                    />
+                  </div>
+                  <CardHeader>
+                    <CardTitle>{blog.title}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="line-clamp-2">{blog.excerpt}</p>
+                  </CardContent>
+                  <CardFooter>
+                    <Link href={`/blogs/${blog.slug}`}>
+                      <Button variant="outline">Read More</Button>
+                    </Link>
+                  </CardFooter>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+      </main>
+      <SiteFooter />
     </div>
-  );
+  )
 }

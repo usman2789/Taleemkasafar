@@ -23,7 +23,7 @@ export default function QuestionDisplay({
     <div className="bg-white border border-gray-300 rounded-md mb-4">
       <div className="bg-blue-100 p-2 flex justify-between items-center border-b border-gray-300">
         <div>
-          Question No: {currentIndex + 1} of {totalQuestions} | Section: {question.subject}
+          Q. No: {currentIndex + 1} of {totalQuestions} |  {question.subject}
         </div>
         <div className="flex items-center">
           <span className="mr-2">
@@ -32,20 +32,20 @@ export default function QuestionDisplay({
             ) : selectedAnswer !== undefined ? (
               <span className="text-yellow-600 font-semibold">Not Saved</span>
             ) : (
-              <span className="text-gray-600">Not Attempted</span>
+              <span className="text-gray-600">Not Attempt</span>
             )}
           </span>
-          <span>Marks: 1</span>
+          {/* <span>Marks: 1</span> */}
         </div>
       </div>
 
-      <div className="p-4 min-h-[200px] max-h-[300px] border-b border-gray-300 overflow-y-auto">
-        <h2 className="text-lg font-mono">{question.question}</h2>
+      <div className="p-4 min-h-[125px] max-h-[220px] border-b border-gray-300 overflow-y-auto">
+        <h5 className="text-lg font-mono">{question.question}</h5>
       </div>
 
-      <div className="bg-blue-100 p-2 border-b border-gray-300">Answer ( Please select your correct option )</div>
+      <div className="bg-blue-100 p-1 border-b border-gray-300">Answer ( Please select your correct option )</div>
 
-      <div className="p-4 max-h-[300px] overflow-y-auto">
+      <div className="p-2 max-h-[200px] overflow-y-auto">
         {question.options.map((option, index) => (
           <div key={index} className="mb-2 border border-gray-300 p-2">
             <label className="flex items-center space-x-2 cursor-pointer">

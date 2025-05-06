@@ -1,22 +1,13 @@
-is landing page build on top of ssr,ssg-yes components on csr,while landing page on ssr
 
-lms-use shad cn-side bar or lms theme
+0-make the quiz interface responsive-COMPLETED
+1-resolve the basic issue of sections linking on landing page
+2-resolve blogs basic issues and add proper blogs scetion on landing page
+3-add blogs
+4-make sure the proper working of quiz
+5-quiz session timeout
+6-make sure it shows correct results
+7-build database
+8-integrate supabase
+9-now mcqs in db,store in db,sow user the results and give him option to send this result on his mail,instead of storing it
+10-show better analytics
 
-blogs issue(on landing page(fetch related posts or make it a different component),ui design on other pages)
-
-framer motion use
-
-make sure that mcq store in local storage or use db
-and test stops when user switch the tab,close the browser
-and when next time it opens it start from same place
-
-also make sure that the results shown must include accurate scores in each section,and overall score
-
-
-make sure that the user past result and progress save if use db
-
-
-user should be able to review his test,he taken to see which one are correct and during this give option to chat with
-trained modal to see why is it wrong and how to think or solve it
-
-what about if possile show time also
